@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Upload-Admin</string>
+    <string name="enter_title_of_image">Enter Title of Image</string>
+    <string name="enter_description">Enter Description</string>
+    <string name="todo">TODO</string>
+    <string name="browse">Browse</string>
+    <string name="upload_image_to_firebase">Upload Image to Firebase</string>
+
+    <string-array name="cats">
+
+        <item>Pussy</item>
+        <item>tits</item>
+        <item>ass</item>
+    </string-array>
+</resources>

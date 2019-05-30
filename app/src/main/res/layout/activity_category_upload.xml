@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoryUpload">
+
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/categoryTitle"
+        android:hint="Enter Title of Category"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/catDesc"
+        android:hint="Enter Description"
+        android:layout_below="@+id/categoryTitle"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/random"
+        android:text="Select Thumbnail for Category"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/catDesc"/>
+
+    <Button
+        android:id="@+id/browseforCategory"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="124dp"
+        android:text="Category Thumbnail"
+        android:onClick="browseClick"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/browseforCategory"
+        android:id="@+id/categoryView"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/catUpload"
+        android:layout_below="@id/categoryView"
+        android:text="Upload Category"
+        android:onClick="UploadCategory"/>
+</RelativeLayout>
